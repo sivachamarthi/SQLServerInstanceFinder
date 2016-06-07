@@ -1,0 +1,26 @@
+﻿<Window x:Name="SQL_INSTANCE_FINDER" x:Class="SQLServerInstanceFinder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SQLServerInstanceFinder"
+        mc:Ignorable="d"
+        Title="SQL INSTANCE FINDER" Height="507.632" Width="1040.789">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+    </Window.Background>
+    <Grid x:Name="SQL_DB_INSTANCE_FINDER" Margin="0,0,-264,0" RenderTransformOrigin="0.521,0.502">
+        <Button x:Name="btnFindInstances" Content="Find SQL Server Instances In your Network." HorizontalAlignment="Left" Margin="23,77,0,0" VerticalAlignment="Top" Width="261" Click="btnFindInstances_Click"/>
+        <ListBox x:Name="listBoxSQLServerInstance" HorizontalAlignment="Left" Height="204" Margin="321,10,0,0" VerticalAlignment="Top" Width="267" SelectionChanged="listBoxSQLServerInstance_Change"/>
+        <ProgressBar x:Name="prgSQLInstances" HorizontalAlignment="Left" Height="17" VerticalAlignment="Top" Width="265" Margin="21,128,0,0" Visibility="Hidden"/>
+        <Label x:Name="lbluserName" Content="UserName : " HorizontalAlignment="Left" Margin="637,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.522,1.379"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="738,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <Label x:Name="lblPassword" Content="Password : " HorizontalAlignment="Left" Margin="634,73,0,0" VerticalAlignment="Top" Width="76"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="738,79,0,0" VerticalAlignment="Top" Width="215"/>
+        <Button x:Name="btnLogin" Content="Test Connection" HorizontalAlignment="Left" Margin="644,124,0,0" VerticalAlignment="Top" Width="204" Click="btnLogin_Click"/>
+        <Button x:Name="btnGetConnString" Content="Get Connection String" HorizontalAlignment="Left" Margin="69,385,0,0" VerticalAlignment="Top" Width="178" Click="btnGetConnString_Click"/>
+        <TextBox x:Name="txtConnectionString" HorizontalAlignment="Left" Height="87" Margin="323,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+        <Button x:Name="btnGetDataBases" Content="Get Databases" HorizontalAlignment="Left" Margin="35,250,0,0" VerticalAlignment="Top" Width="229" Click="btnGetDataBases_Click"/>
+        <ListBox x:Name="listBoxDatabases" HorizontalAlignment="Left" Height="100" Margin="322,242,0,0" VerticalAlignment="Top" Width="267"/>
+    </Grid>
+</Window>

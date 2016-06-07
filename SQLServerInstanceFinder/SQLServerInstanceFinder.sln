@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerInstanceFinder", "SQLServerInstanceFinder\SQLServerInstanceFinder.csproj", "{96ED8EEF-7501-4C24-8432-1BBF5DA32751}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstanceFinderSetup", "InstanceFinderSetup\InstanceFinderSetup.vdproj", "{C3A4EF99-A637-4BE7-B0E8-797C9EC4A450}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96ED8EEF-7501-4C24-8432-1BBF5DA32751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96ED8EEF-7501-4C24-8432-1BBF5DA32751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96ED8EEF-7501-4C24-8432-1BBF5DA32751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96ED8EEF-7501-4C24-8432-1BBF5DA32751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A4EF99-A637-4BE7-B0E8-797C9EC4A450}.Debug|Any CPU.ActiveCfg = Debug
+		{C3A4EF99-A637-4BE7-B0E8-797C9EC4A450}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
