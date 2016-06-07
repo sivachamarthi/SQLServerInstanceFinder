@@ -3,6 +3,7 @@
 Simple utility for finding SQL Server instances in a network and building connection strings.
 
 **Application Usage:**
+
 1. Find all the instances in your network
 2. Select an Instance
 3. Enter the login credentials
