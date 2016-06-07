@@ -9,7 +9,8 @@ Simple utility for finding SQL Server instances in a network and building connec
 3. Enter the login credentials
 4. Test the connection
 5. Get the available databases
-6. Get the connection string
+6. Select a database
+7. Get the connection string
 
 **Screenshot**
 
