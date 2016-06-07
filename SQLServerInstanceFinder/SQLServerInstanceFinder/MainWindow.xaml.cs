@@ -31,7 +31,11 @@ namespace SQLServerInstanceFinder
 
         }
 
-        
+        /// <summary>
+        /// Async method for finding the list of sql server instances in network.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void btnFindInstances_Click(object sender, RoutedEventArgs e)
         {
             listBoxSQLServerInstance.Items.Clear();
@@ -53,12 +57,12 @@ namespace SQLServerInstanceFinder
             btnFindInstances.IsEnabled = true;
         }
 
-        private void bindServerInstancesToListBox(List<String> _serverInstances)
-        {
-           
-        }
-
-        private  void btnLogin_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// For SQL Server Authentication
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             btnLogin.IsEnabled = false;
             string connError = "";
@@ -69,7 +73,7 @@ namespace SQLServerInstanceFinder
             }
             else
             {
-                if(!String.IsNullOrEmpty(connError))
+                if (!String.IsNullOrEmpty(connError))
                 {
                     MessageBox.Show(connError, "Error!");
                 }
@@ -77,7 +81,11 @@ namespace SQLServerInstanceFinder
             btnLogin.IsEnabled = true;
         }
 
-        
+        /// <summary>
+        /// Gets the avalilable databases in the instance.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGetDataBases_Click(object sender, RoutedEventArgs e)
         {
             string connError = "";
@@ -169,6 +177,11 @@ namespace SQLServerInstanceFinder
             }
         }
 
+        /// <summary>
+        /// Builds a connection string based on the selected details
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGetConnString_Click(object sender, RoutedEventArgs e)
         {
             string connError = "";
