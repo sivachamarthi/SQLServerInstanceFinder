@@ -32,7 +32,6 @@ namespace SQLServerInstanceFinder
             }
 
             return lstSQLInstances;
-
         }
     }
 }
